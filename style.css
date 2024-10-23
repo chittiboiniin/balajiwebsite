@@ -1,0 +1,43 @@
+.outbox{
+    border:solid 1px;
+    height: 160px;
+}
+.outerbor{
+    border: solid 1px;
+    height: 350px;
+}
+#inbox1,#inbox2,#inbox3{ 
+    border: solid 1px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+#inbox1{
+    width: 600px;
+    background-image: url(bits1.webp);
+    background-repeat: no-repeat;
+    background-size: 600px 350px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(bits2.webp);
+    }
+    10%{
+        background-image: url(bits3.jpg);
+    }
+    20%{
+        background-image: url(bits4.avif);
+    }
+    30%{
+        background-image: url(bits5.jpg) ;
+    }
+    40%{
+        background-image: url(bits6.jpg);
+    }
+}
+#inbox2,#inbox3{
+    width: 250px;
+}
